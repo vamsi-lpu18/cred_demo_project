@@ -1,0 +1,22 @@
+{
+  "name": "test-automation-project",
+  "version": "1.0.0",
+  "description": "Test Automation Project with WebdriverIO",
+  "scripts": {
+    "test": "wdio run wdio.conf.js",
+    "test:parallel": "wdio run wdio.conf.js --parallel",
+    "report": "allure generate ./allure-results --clean",
+    "start": "http-server src -p 3001"
+  },
+  "dependencies": {
+    "@wdio/allure-reporter": "^8.32.0",
+    "@wdio/cli": "^8.32.0",
+    "@wdio/local-runner": "^8.32.0",
+    "@wdio/mocha-framework": "^8.32.0",
+    "@wdio/spec-reporter": "^8.32.0",
+    "chai": "^4.3.7",
+    "chromedriver": "^136.0.2",
+    "http-server": "^14.1.1",
+    "wdio-chromedriver-service": "^8.0.0"
+  }
+}
